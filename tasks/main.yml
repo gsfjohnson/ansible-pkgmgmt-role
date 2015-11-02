@@ -1,0 +1,8 @@
+---
+
+- name: install pkg
+  yum:
+    pkg={{item.name}}
+    state={{item.state}}
+  with_items: pkgmgmt_install
+
